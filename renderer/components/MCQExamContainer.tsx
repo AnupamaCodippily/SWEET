@@ -27,7 +27,13 @@ function evaluateMCQExam(mcqs: MCQProblem[], answers: number[][]): mcqReport {
     }
 }
 
-const MCQExamContainer: React.FC<Exam> = ({ problems, title }) => {
+type MCQExamContainerProps = {
+    exam: Exam,
+    closeExam: Function
+}
+
+const MCQExamContainer: React.FC<MCQExamContainerProps> = ({ exam: { problems, title }, closeExam }) => {
+
     const [answers, setAnswers] = useState<number[][]>([])
     const [questions, setQuestions] = useState<MCQProblem[]>(problems as MCQProblem[])
     const [questionIdx, setQuestionIdx] = useState<number>(0)
@@ -57,7 +63,7 @@ const MCQExamContainer: React.FC<Exam> = ({ problems, title }) => {
                 <h2>Percentage: {report.percentage}</h2>
 
                 <h3>Details:</h3>
-                <pre style={{ textAlign: "left", backgroundColor: "black", padding: "10px" }}>    
+                <pre style={{ textAlign: "left", backgroundColor: "black", padding: "10px" }}>
                     {report.responses}
                 </pre>
 
@@ -72,7 +78,7 @@ const MCQExamContainer: React.FC<Exam> = ({ problems, title }) => {
                     Restart Exam
                 </button>
 
-                <button onClick={_ => {}}>
+                <button onClick={_ => closeExam()}>
                     Close
                 </button>
             </div>
@@ -81,8 +87,14 @@ const MCQExamContainer: React.FC<Exam> = ({ problems, title }) => {
 
     return (
         <div>
-            <h1 style={{textAlign:'center', position: 'absolute', top: 10 }}>Exam: {title}</h1>
+            <h2 style={{ textAlign: 'center', position: 'absolute', top: 10 }}>Exam: {title}</h2>
+            <button className='close-exam-button' style={{ position: 'fixed', top: 20, right: 24 }} onClick={_ => closeExam()}> Close Exam </button>
+
             <MCQProblemForm mcq={questions[questionIdx]} next={nextQuestion} />
+
+            <div style={{ position: 'absolute', bottom: 0, right: 10 }}>
+                <h3>Question {questionIdx + 1} of {questions.length}</h3>
+            </div>
         </div>
     )
 }

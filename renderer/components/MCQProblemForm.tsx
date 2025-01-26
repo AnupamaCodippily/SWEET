@@ -10,9 +10,6 @@ const MCQProblemForm: React.FC<QFormProps> = ({ mcq, next }) => {
 
     const [answer, setAnswer] = useState<Set<number>>(new Set());
 
-    const isMultiSelect = mcq.answer.length > 1;
-    const inputType = isMultiSelect ? "checkbox" : "radio";
-
     function handleNext(e: React.MouseEvent) {
         e.preventDefault();
         if (answer.size === 0) {
@@ -33,14 +30,14 @@ const MCQProblemForm: React.FC<QFormProps> = ({ mcq, next }) => {
             <div>
                 {mcq.options.map((option, idx) => {
                     return (
-                        <div key={idx}>
-                            <span onClick={e => {
-                                if (answer.has(idx)) {
-                                    setAnswer(answer => { answer.delete(idx); return new Set(answer) });
-                                } else {
-                                    setAnswer(answer => { answer.add(idx); return new Set(answer); });
-                                }
-                            }} >
+                        <div className='mcq-option-container' key={idx} onClick={e => {
+                            if (answer.has(idx)) {
+                                setAnswer(answer => { answer.delete(idx); return new Set(answer) });
+                            } else {
+                                setAnswer(answer => { answer.add(idx); return new Set(answer); });
+                            }
+                        }}>
+                            <span  >
                                 {answer.has(idx) ? "👉  " : ""}  {"(" + (idx + 1) + ") " + option}
                             </span>
                         </div>
@@ -49,7 +46,7 @@ const MCQProblemForm: React.FC<QFormProps> = ({ mcq, next }) => {
             </div>
 
             <br />
-            <button onClick={e =>  handleNext(e) }>
+            <button onClick={e => handleNext(e)}>
                 Next
             </button>
         </div>
