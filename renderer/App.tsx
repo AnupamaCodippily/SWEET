@@ -1,15 +1,12 @@
 import { useState } from 'react'
-import QuestionForm from './components/QuestionForm'
 import React from 'react'
 import { useIpcRenderer } from './hooks/useIpcRenderer'
-import { sendForTestingOpenAI } from './requests/send-for-testing'
 import IPCChannel from './types/IPCChannel'
 import { loadExamFromJsonString } from './utils/load-exam'
 import { Exam } from './models/Exam'
 import MCQExamContainer from './components/MCQExamContainer'
 
 function App() {
-
 
   const [exam, setExam] = useState<Exam | null>(null)
 

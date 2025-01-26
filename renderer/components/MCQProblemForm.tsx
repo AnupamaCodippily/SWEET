@@ -8,10 +8,21 @@ type QFormProps = {
 
 const MCQProblemForm: React.FC<QFormProps> = ({ mcq, next }) => {
 
-    const [answer, setAnswer] = useState<Set<number>>(new Set())
+    const [answer, setAnswer] = useState<Set<number>>(new Set());
 
     const isMultiSelect = mcq.answer.length > 1;
     const inputType = isMultiSelect ? "checkbox" : "radio";
+
+    function handleNext(e: React.MouseEvent) {
+        e.preventDefault();
+        if (answer.size === 0) {
+            alert("Please select an option");
+            return;
+        }
+        const answerArray = Array.from(answer);
+        setAnswer(new Set([]));
+        next(answerArray);
+    }
 
     return (
         <div>
@@ -23,24 +34,22 @@ const MCQProblemForm: React.FC<QFormProps> = ({ mcq, next }) => {
                 {mcq.options.map((option, idx) => {
                     return (
                         <div key={idx}>
-                            <input type={inputType} id={option} name="answer" value={option} onChange={e => {
-                                if (e.target.checked) {
-                                    setAnswer(answer => answer.add(idx));
+                            <span onClick={e => {
+                                if (answer.has(idx)) {
+                                    setAnswer(answer => { answer.delete(idx); return new Set(answer) });
                                 } else {
-                                    setAnswer(answer => {
-                                        answer.delete(idx);
-                                        return answer;
-                                    });
+                                    setAnswer(answer => { answer.add(idx); return new Set(answer); });
                                 }
-                            }} />
-                            <label htmlFor={option}>{option}</label>
+                            }} >
+                                {answer.has(idx) ? "👉  " : ""}  {"(" + (idx + 1) + ") " + option}
+                            </span>
                         </div>
                     )
                 })}
             </div>
 
             <br />
-            <button onClick={_ => { next(Array.from(answer).sort()); }}>
+            <button onClick={e =>  handleNext(e) }>
                 Next
             </button>
         </div>
