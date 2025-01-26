@@ -1,105 +1,798 @@
 {
-    "topic": "Core Java Programming - Beginner",
+    "title": "Core Java Programming - Beginner",
     "description": "This exam covers the fundamentals of Java programming for beginners.",
-    "questions": [
-        "What is the difference between JDK, JRE, and JVM?",
-        "Explain the significance of the `main` method in Java.",
-        "What are the key features of Java?",
-        "What is a Java Virtual Machine (JVM), and why is it important?",
-        "How does Java achieve platform independence?",
-        "What is the difference between a compiled and an interpreted language?",
-        "What are Java bytecode and its role in execution?",
-        "What is the purpose of the `public`, `private`, and `protected` access modifiers?",
-        "Explain the concept of packages in Java. How are they useful?",
-        "What is the difference between `import` and `static import`?",
-        "What are primitive data types in Java, and why are they different from objects?",
-        "What is the default value of uninitialized variables in Java?",
-        "What is the difference between `String`, `StringBuilder`, and `StringBuffer`?",
-        "What is the `final` keyword, and how can it be used with variables, methods, and classes?",
-        "What is the difference between a `break` statement and a `continue` statement?",
-        "What is the purpose of the `this` keyword in Java?",
-        "What is the difference between `this` and `super` in Java?",
-        "What is a constructor, and how is it different from a method?",
-        "Can you explain constructor overloading? Provide an example.",
-        "What are static methods and static variables in Java?",
-        "What is the significance of the `static` keyword?",
-        "What is the difference between an instance method and a static method?",
-        "Explain the concept of object-oriented programming (OOP).",
-        "What are the four pillars of OOP? Explain each briefly.",
-        "What is encapsulation, and why is it important?",
-        "What is inheritance, and how does it promote code reuse?",
-        "What is polymorphism? Provide examples of compile-time and runtime polymorphism.",
-        "What is abstraction? How is it implemented in Java?",
-        "What is the difference between an abstract class and an interface?",
-        "How does multiple inheritance work in Java?",
-        "What is the significance of the `instanceof` operator?",
-        "What is the purpose of the `equals` method? How is it different from `==`?",
-        "What are hashCode and equals contracts? Why are they important?",
-        "What is the difference between overloading and overriding?",
-        "Can you override a static method in Java? Explain.",
-        "What is the purpose of the `@Override` annotation?",
-        "What is the purpose of the `abstract` keyword?",
-        "What is an interface in Java? How is it different from a class?",
-        "What are functional interfaces in Java? Provide examples.",
-        "What is a lambda expression? How does it relate to functional interfaces?",
-        "What is the purpose of the `default` keyword in interfaces?",
-        "What is the difference between `ArrayList` and `LinkedList`?",
-        "What are the differences between an array and a collection in Java?",
-        "What is the purpose of the `Iterator` interface?",
-        "How do you implement generics in Java? Provide examples.",
-        "What are bounded type parameters in generics?",
-        "What is the difference between `HashMap`, `TreeMap`, and `LinkedHashMap`?",
-        "What is a `Set`, and how does it differ from a `List`?",
-        "What is the difference between `HashSet` and `TreeSet`?",
-        "What is the difference between `ArrayList` and `Vector`?",
-        "What is a thread in Java? How do you create one?",
-        "What is the difference between `Runnable` and `Thread`?",
-        "What is the purpose of the `synchronized` keyword?",
-        "What is a deadlock, and how can you avoid it?",
-        "What is the difference between `wait`, `notify`, and `notifyAll`?",
-        "What is the difference between `sleep` and `yield`?",
-        "What is a class loader in Java?",
-        "What is the difference between checked and unchecked exceptions?",
-        "What is the difference between `throw` and `throws`?",
-        "What is the purpose of the `finally` block in exception handling?",
-        "What is the difference between `try-catch` and `try-with-resources`?",
-        "What is an assertion in Java? When would you use it?",
-        "What is a `Callable`? How does it differ from `Runnable`?",
-        "What is a thread pool, and why is it useful?",
-        "What is the difference between `Executor` and `ExecutorService`?",
-        "What is the `volatile` keyword in Java?",
-        "What is the difference between serialization and deserialization?",
-        "What is the purpose of the `transient` keyword in serialization?",
-        "What is the Java Reflection API, and when would you use it?",
-        "What are annotations in Java, and how are they processed?",
-        "What is the difference between `Comparable` and `Comparator`?",
-        "What is the purpose of the `Optional` class in Java 8?",
-        "What is a stream in Java 8? How is it used?",
-        "What is the difference between intermediate and terminal operations in streams?",
-        "What is a `Collector` in Java Streams? Provide examples.",
-        "What are the differences between `map` and `flatMap` in streams?",
-        "What is the purpose of the `Function` interface in Java?",
-        "What are method references in Java? Provide examples.",
-        "What is the difference between `Supplier` and `Consumer` interfaces in Java?",
-        "What is a `Predicate` in Java? How is it used?",
-        "What is the difference between `Optional.of`, `Optional.ofNullable`, and `Optional.empty`?",
-        "What is the purpose of the `Collectors.toList` method?",
-        "What is the difference between `ForkJoinPool` and `ExecutorService`?",
-        "What is the purpose of the `CompletableFuture` class?",
-        "What are the key features introduced in Java 8?",
-        "What is the purpose of the `default` keyword in Java interfaces?",
-        "What is the difference between `parallelStream` and `stream`?",
-        "What is the Java Memory Model (JMM)?",
-        "What is garbage collection in Java, and how does it work?",
-        "What are the differences between the G1, CMS, and Serial garbage collectors?",
-        "What are strong, weak, soft, and phantom references in Java?",
-        "What is the difference between `String`, `StringBuilder`, and `StringBuffer` in terms of thread safety?",
-        "What is the purpose of the `java.util.concurrent` package?",
-        "What is the difference between a `HashMap` and a `ConcurrentHashMap`?",
-        "What is a `SoftReference`, and when would you use it?",
-        "What is a classpath, and why is it important?",
-        "What is the difference between JAR and WAR files in Java?",
-        "How does Java achieve backward compatibility?",
-        "What is the significance of the `serialVersionUID` field in serialization?"
+    "problems": [
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "What is the difference between JDK, JRE, and JVM?"
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "Explain the significance of the `main` method in Java."
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "What are the key features of Java?"
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "What is a Java Virtual Machine (JVM), and why is it important?"
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "How does Java achieve platform independence?"
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "What is the difference between a compiled and an interpreted language?"
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "What are Java bytecode and its role in execution?"
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "What is the purpose of the `public`, `private`, and `protected` access modifiers?"
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "Explain the concept of packages in Java. How are they useful?"
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "What is the difference between `import` and `static import`?"
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "What are primitive data types in Java, and why are they different from objects?"
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "What is the default value of uninitialized variables in Java?"
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "What is the difference between `String`, `StringBuilder`, and `StringBuffer`?"
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "What is the `final` keyword, and how can it be used with variables, methods, and classes?"
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "What is the difference between a `break` statement and a `continue` statement?"
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "What is the purpose of the `this` keyword in Java?"
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "What is the difference between `this` and `super` in Java?"
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "What is a constructor, and how is it different from a method?"
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "Can you explain constructor overloading? Provide an example."
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "What are static methods and static variables in Java?"
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "What is the significance of the `static` keyword?"
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "What is the difference between an instance method and a static method?"
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "Explain the concept of object-oriented programming (OOP)."
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "What are the four pillars of OOP? Explain each briefly."
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "What is encapsulation, and why is it important?"
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "What is inheritance, and how does it promote code reuse?"
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "What is polymorphism? Provide examples of compile-time and runtime polymorphism."
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "What is abstraction? How is it implemented in Java?"
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "What is the difference between an abstract class and an interface?"
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "How does multiple inheritance work in Java?"
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "What is the significance of the `instanceof` operator?"
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "What is the purpose of the `equals` method? How is it different from `==`?"
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "What are hashCode and equals contracts? Why are they important?"
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "What is the difference between overloading and overriding?"
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "Can you override a static method in Java? Explain."
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "What is the purpose of the `@Override` annotation?"
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "What is the purpose of the `abstract` keyword?"
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "What is an interface in Java? How is it different from a class?"
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "What are functional interfaces in Java? Provide examples."
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "What is a lambda expression? How does it relate to functional interfaces?"
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "What is the purpose of the `default` keyword in interfaces?"
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "What is the difference between `ArrayList` and `LinkedList`?"
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "What are the differences between an array and a collection in Java?"
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "What is the purpose of the `Iterator` interface?"
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "How do you implement generics in Java? Provide examples."
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "What are bounded type parameters in generics?"
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "What is the difference between `HashMap`, `TreeMap`, and `LinkedHashMap`?"
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "What is a `Set`, and how does it differ from a `List`?"
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "What is the difference between `HashSet` and `TreeSet`?"
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "What is the difference between `ArrayList` and `Vector`?"
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "What is a thread in Java? How do you create one?"
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "What is the difference between `Runnable` and `Thread`?"
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "What is the purpose of the `synchronized` keyword?"
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "What is a deadlock, and how can you avoid it?"
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "What is the difference between `wait`, `notify`, and `notifyAll`?"
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "What is the difference between `sleep` and `yield`?"
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "What is a class loader in Java?"
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "What is the difference between checked and unchecked exceptions?"
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "What is the difference between `throw` and `throws`?"
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "What is the purpose of the `finally` block in exception handling?"
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "What is the difference between `try-catch` and `try-with-resources`?"
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "What is an assertion in Java? When would you use it?"
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "What is a `Callable`? How does it differ from `Runnable`?"
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "What is a thread pool, and why is it useful?"
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "What is the difference between `Executor` and `ExecutorService`?"
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "What is the `volatile` keyword in Java?"
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "What is the difference between serialization and deserialization?"
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "What is the purpose of the `transient` keyword in serialization?"
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "What is the Java Reflection API, and when would you use it?"
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "What are annotations in Java, and how are they processed?"
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "What is the difference between `Comparable` and `Comparator`?"
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "What is the purpose of the `Optional` class in Java 8?"
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "What is a stream in Java 8? How is it used?"
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "What is the difference between intermediate and terminal operations in streams?"
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "What is a `Collector` in Java Streams? Provide examples."
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "What are the differences between `map` and `flatMap` in streams?"
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "What is the purpose of the `Function` interface in Java?"
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "What are method references in Java? Provide examples."
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "What is the difference between `Supplier` and `Consumer` interfaces in Java?"
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "What is a `Predicate` in Java? How is it used?"
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "What is the difference between `Optional.of`, `Optional.ofNullable`, and `Optional.empty`?"
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "What is the purpose of the `Collectors.toList` method?"
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "What is the difference between `ForkJoinPool` and `ExecutorService`?"
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "What is the purpose of the `CompletableFuture` class?"
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "What are the key features introduced in Java 8?"
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "What is the purpose of the `default` keyword in Java interfaces?"
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "What is the difference between `parallelStream` and `stream`?"
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "What is the Java Memory Model (JMM)?"
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "What is garbage collection in Java, and how does it work?"
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "What are the differences between the G1, CMS, and Serial garbage collectors?"
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "What are strong, weak, soft, and phantom references in Java?"
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "What is the difference between `String`, `StringBuilder`, and `StringBuffer` in terms of thread safety?"
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "What is the purpose of the `java.util.concurrent` package?"
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "What is the difference between a `HashMap` and a `ConcurrentHashMap`?"
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "What is a `SoftReference`, and when would you use it?"
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "What is a classpath, and why is it important?"
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "What is the difference between JAR and WAR files in Java?"
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "How does Java achieve backward compatibility?"
+        },
+        {
+            "topics": [
+                "java"
+            ],
+            "type": "ESSAY",
+            "difficulty": "EASY",
+            "statement": "What is the significance of the `serialVersionUID` field in serialization?"
+        }
     ]
 }

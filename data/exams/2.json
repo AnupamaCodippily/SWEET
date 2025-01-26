@@ -1,0 +1,261 @@
+{
+    "title": "Java and Spring Fundamentals Exam 1",
+    "description": "This exam tests some intermediate concepts in Java and Spring.",
+    "problems": [
+        {
+            "topics": [
+                "Java",
+                "Generics"
+            ],
+            "statement": "What is the purpose of wildcard '?' in Java Generics?",
+            "options": [
+                "To denote a supertype of all types",
+                "To represent an unknown type",
+                "To restrict the type of the generic parameter",
+                "To define a specific class type"
+            ],
+            "answer": [
+                1
+            ],
+            "difficulty": 2
+        },
+        {
+            "topics": [
+                "Java",
+                "Streams API"
+            ],
+            "statement": "What does the 'reduce' operation in Java Streams do?",
+            "options": [
+                "Combines all elements of the stream into a single result",
+                "Filters elements of the stream",
+                "Transforms each element into another type",
+                "Splits the stream into multiple smaller streams"
+            ],
+            "answer": [
+                0
+            ],
+            "difficulty": 2
+        },
+        {
+            "topics": [
+                "Java",
+                "Concurrency"
+            ],
+            "statement": "Which method in the `ExecutorService` interface is used to wait for previously submitted tasks to complete?",
+            "options": [
+                "shutdownNow()",
+                "awaitTermination()",
+                "invokeAll()",
+                "submit()"
+            ],
+            "answer": [
+                1
+            ],
+            "difficulty": 3
+        },
+        {
+            "topics": [
+                "JPA",
+                "Entity Relationships"
+            ],
+            "statement": "In JPA, what does the `@OneToMany` annotation represent?",
+            "options": [
+                "A many-to-one relationship",
+                "A one-to-many relationship",
+                "A one-to-one relationship",
+                "A many-to-many relationship"
+            ],
+            "answer": [
+                1
+            ],
+            "difficulty": 2
+        },
+        {
+            "topics": [
+                "JPA",
+                "Entity Mapping"
+            ],
+            "statement": "Which annotation is used in JPA to define a composite primary key?",
+            "options": [
+                "@Id",
+                "@EmbeddedId",
+                "@Column",
+                "@JoinColumn"
+            ],
+            "answer": [
+                1
+            ],
+            "difficulty": 3
+        },
+        {
+            "topics": [
+                "Spring",
+                "Dependency Injection"
+            ],
+            "statement": "What is the default scope of a Spring Bean?",
+            "options": [
+                "Singleton",
+                "Prototype",
+                "Session",
+                "Request"
+            ],
+            "answer": [
+                0
+            ],
+            "difficulty": 2
+        },
+        {
+            "topics": [
+                "Spring",
+                "AOP"
+            ],
+            "statement": "What is the purpose of a Pointcut in Spring AOP?",
+            "options": [
+                "To define the advice logic",
+                "To identify join points where advice should be applied",
+                "To replace an existing bean",
+                "To intercept HTTP requests"
+            ],
+            "answer": [
+                1
+            ],
+            "difficulty": 3
+        },
+        {
+            "topics": [
+                "Spring",
+                "Security"
+            ],
+            "statement": "Which annotation is used to secure methods in Spring?",
+            "options": [
+                "@Secured",
+                "@EnableSecurity",
+                "@SecureMethods",
+                "@EnableWebSecurity"
+            ],
+            "answer": [
+                0
+            ],
+            "difficulty": 2
+        },
+        {
+            "topics": [
+                "Spring",
+                "MVC"
+            ],
+            "statement": "What is the role of the `@ModelAttribute` annotation in Spring MVC?",
+            "options": [
+                "To handle HTTP requests directly",
+                "To bind request parameters to a method parameter or model",
+                "To define the response format",
+                "To map URLs to controller methods"
+            ],
+            "answer": [
+                1
+            ],
+            "difficulty": 2
+        },
+        {
+            "topics": [
+                "Spring",
+                "Transactions"
+            ],
+            "statement": "What does the `@Transactional` annotation do in Spring?",
+            "options": [
+                "Manages HTTP requests",
+                "Defines the transaction propagation behavior",
+                "Specifies the type of bean",
+                "Configures the application context"
+            ],
+            "answer": [
+                1
+            ],
+            "difficulty": 3
+        },
+        {
+            "topics": [
+                "JPA",
+                "Query Language"
+            ],
+            "statement": "Which of the following is true about JPQL?",
+            "options": [
+                "It operates directly on database tables",
+                "It operates on Java objects and their relationships",
+                "It only supports native SQL queries",
+                "It requires Hibernate as a JPA provider"
+            ],
+            "answer": [
+                1
+            ],
+            "difficulty": 3
+        },
+        {
+            "topics": [
+                "Java",
+                "Collections"
+            ],
+            "statement": "Which of the following `Map` implementations maintains the insertion order of keys?",
+            "options": [
+                "HashMap",
+                "TreeMap",
+                "LinkedHashMap",
+                "ConcurrentHashMap"
+            ],
+            "answer": [
+                2
+            ],
+            "difficulty": 2
+        },
+        {
+            "topics": [
+                "Java",
+                "Memory Management"
+            ],
+            "statement": "What is the primary purpose of the garbage collector in Java?",
+            "options": [
+                "To allocate memory for new objects",
+                "To optimize CPU usage",
+                "To deallocate unused memory and reclaim resources",
+                "To manage thread lifecycles"
+            ],
+            "answer": [
+                2
+            ],
+            "difficulty": 2
+        },
+        {
+            "topics": [
+                "Spring",
+                "Boot"
+            ],
+            "statement": "Which annotation is used to enable Spring Boot's auto-configuration feature?",
+            "options": [
+                "@EnableAutoConfiguration",
+                "@SpringBootApplication",
+                "@Configuration",
+                "@ComponentScan"
+            ],
+            "answer": [
+                1
+            ],
+            "difficulty": 2
+        },
+        {
+            "topics": [
+                "JPA",
+                "Caching"
+            ],
+            "statement": "What is the role of the first-level cache in JPA?",
+            "options": [
+                "Caches the database schema",
+                "Stores entities at the session level",
+                "Caches entities across all sessions",
+                "Caches SQL queries"
+            ],
+            "answer": [
+                1
+            ],
+            "difficulty": 2
+        }
+    ]
+}
