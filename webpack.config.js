@@ -7,6 +7,7 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'public'),
         filename: 'bundle.js',
+        clean: true, 
     },
     target: 'electron-renderer',
     module: {
@@ -26,6 +27,7 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             template: './public/index.html',
+            inject: false,
         }),
     ],
     resolve: {
