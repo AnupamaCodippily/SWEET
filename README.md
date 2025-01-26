@@ -146,7 +146,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 If you have questions or feedback, feel free to reach out:
 
-- **GitHub Issues**: [https://github.com/AnupamaCodippily/SWEET/issues](https://github.com/yourusername/SWEET/issues)
+- **GitHub Issues**: [https://github.com/AnupamaCodippily/SWEET/issues](https://github.com/AnupamaCodippily/SWEET/issues)
 
 ---
 
