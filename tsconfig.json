@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "target": "ES2022",                 // Use modern JavaScript features
+    "module": "CommonJS",              // Electron uses CommonJS modules
+    "outDir": "./dist",                // Output compiled files here
+    "rootDir": "./renderer",                // Place source files in `src`
+    "strict": true,                    // Enable strict type checking
+    "esModuleInterop": true,           // Allow ES module imports
+    "moduleResolution": "node",        // Use Node.js module resolution
+    "skipLibCheck": true               // Speed up type checking
+  },
+  "include": ["renderer/**/*.ts", "renderer/**/*.tsx"],          // Include all .ts files in the `src` folder
+  "exclude": ["node_modules"]
+}
