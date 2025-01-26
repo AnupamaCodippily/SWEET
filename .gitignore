@@ -1,4 +1,6 @@
 node_modules
 public
+.vscode
+
 
 config/profiles-*.json
