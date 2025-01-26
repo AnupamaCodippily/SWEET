@@ -4,6 +4,7 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
+    "start:dev": "webpack && electron .",
     "dev": "webpack serve",
     "build": "webpack"
   },
