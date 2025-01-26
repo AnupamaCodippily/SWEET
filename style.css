@@ -67,6 +67,17 @@ main {
   padding: 20px;
 }
 
+.mcq-option-container {
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.mcq-option-container:hover {
+  background-color: #1a1a1a;
+}
+
 .exam-complete-report {
   position: absolute;
   top: 50px;
@@ -79,6 +90,11 @@ main {
   border-radius: 8px;
   background-color: #1a1a1a;
   box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1), 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.close-exam-button:hover {
+  background-color: red;
+  border: solid 2px white;
 }
 
 
