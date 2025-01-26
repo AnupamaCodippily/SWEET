@@ -36,16 +36,16 @@ export class MCQProblem implements IProblem{
 
 export class EssayProblem implements IProblem{
 
-    answer: string;
+    answer?: string;
     topics: string[];
     statement: string;
     difficulty: ProblemDifficulty;
     type: ProblemType = 'ESSAY';
     
-    constructor(topics: string[], statement: string, answer: string, difficulty?: ProblemDifficulty) {
-        this.answer = answer;
-        this.topics = topics;
+    constructor(topics: string[], statement: string, answer?: string, difficulty?: ProblemDifficulty) {
         this.statement = statement;
+        this.topics = topics;
+        this.answer = answer ?? '';
         this.difficulty = difficulty ?? ProblemDifficulty.EASY;
     }
 
