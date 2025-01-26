@@ -53,9 +53,11 @@ app.on('ready', () => {
     Menu.setApplicationMenu(menu);
 
 
-    // Enable DevTools
-    mainWindow.webContents.openDevTools(); // Opens DevTools on app launch
-
+    // Enable DevTools if --devtoolsenabled is passed as a command line argument
+    if (process.argv.includes('--devtoolsenabled')) {
+        mainWindow.webContents.openDevTools();
+    }
+    
     mainWindow.on('closed', () => {
         mainWindow = null;
     });

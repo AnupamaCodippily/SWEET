@@ -5,6 +5,7 @@
   "scripts": {
     "start": "electron .",
     "start:dev": "webpack && electron .",
+    "start:devtools": "webpack && electron . --devtoolsenabled",
     "dev": "webpack serve",
     "build": "webpack"
   },
