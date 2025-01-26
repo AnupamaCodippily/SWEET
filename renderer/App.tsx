@@ -18,26 +18,18 @@ function App() {
     }
   })
 
-
-  // async function sendForTesting() {
-  //   await sendForTestingOpenAI(answers, questions)
-  // }
-
-
-
   if (!exam) {
     return <>
-      <h1>File &gt; Open Exam</h1>
+      <h2 style={{ textAlign: 'center', width: '100%', position: 'fixed'}}>File &gt; Open Exam</h2>
     </>
   }
 
   return (
     <main>
       {
-        (exam && exam.problems[0].type === 'MCQ') && <MCQExamContainer {...exam} />
+        (exam && exam.problems[0].type === 'MCQ') && <MCQExamContainer exam={exam} closeExam={() => setExam(_ => null)} />
       }
     </main>
-
   )
 }
 
