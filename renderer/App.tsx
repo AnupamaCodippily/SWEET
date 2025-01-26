@@ -1,54 +1,44 @@
-import {  useState } from 'react'
+import { useState } from 'react'
 import QuestionForm from './components/QuestionForm'
 import React from 'react'
 import { useIpcRenderer } from './hooks/useIpcRenderer'
 import { sendForTestingOpenAI } from './requests/send-for-testing'
 import IPCChannel from './types/IPCChannel'
 import { loadExamFromJsonString } from './utils/load-exam'
+import { Exam } from './models/Exam'
+import MCQExamContainer from './components/MCQExamContainer'
 
 function App() {
 
-  const [questions, setQuestions] = useState<string[]>([])
-  const [questionIdx, setQuestionIdx] = useState<number>(0)
-  const [answers, setAnswers] = useState<string[]>([])
 
+  const [exam, setExam] = useState<Exam | null>(null)
 
-  useIpcRenderer(IPCChannel.openExam , (data?: any ) => {
-    if(data) loadExamFromJsonString(data)
+  useIpcRenderer(IPCChannel.openExam, (data?: any) => {
+    if (data) {
+      const exam: Exam = loadExamFromJsonString(data);
+
+      setExam(exam);
+    }
   })
 
 
-  // useEffect(() => {
-  //   if (questionIdx + 1 < questions.length) {
-  //     setQuestionIdx(questionIdx + 1)
-  //   } else {
-  //     questions.length && sendForTesting();
-  //   }
-  // }, [answers])
+  // async function sendForTesting() {
+  //   await sendForTestingOpenAI(answers, questions)
+  // }
 
 
 
-  async function sendForTesting() {
-    await sendForTestingOpenAI(answers, questions)
-  }
-
-  function nextQuestion(new_answer: string) {
-    setAnswers(answers => ([...answers, new_answer]))
-  }
-
-
-
-
-  if (questions?.length === 0) {
+  if (!exam) {
     return <>
-      select an exam to start
-
+      <h1>File &gt; Open Exam</h1>
     </>
   }
 
   return (
     <main>
-      <QuestionForm question={questions[questionIdx]} next={nextQuestion} />
+      {
+        (exam && exam.problems[0].type === 'MCQ') && <MCQExamContainer {...exam} />
+      }
     </main>
 
   )

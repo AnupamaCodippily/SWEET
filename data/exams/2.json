@@ -17,6 +17,7 @@
             "answer": [
                 1
             ],
+            "type": "MCQ",
             "difficulty": 2
         },
         {
@@ -34,6 +35,7 @@
             "answer": [
                 0
             ],
+            "type": "MCQ",
             "difficulty": 2
         },
         {
@@ -51,6 +53,7 @@
             "answer": [
                 1
             ],
+            "type": "MCQ",
             "difficulty": 3
         },
         {
@@ -68,6 +71,7 @@
             "answer": [
                 1
             ],
+            "type": "MCQ",
             "difficulty": 2
         },
         {
@@ -85,6 +89,7 @@
             "answer": [
                 1
             ],
+            "type": "MCQ",
             "difficulty": 3
         },
         {
@@ -102,6 +107,7 @@
             "answer": [
                 0
             ],
+            "type": "MCQ",
             "difficulty": 2
         },
         {
@@ -119,6 +125,7 @@
             "answer": [
                 1
             ],
+            "type": "MCQ",
             "difficulty": 3
         },
         {
@@ -136,6 +143,7 @@
             "answer": [
                 0
             ],
+            "type": "MCQ",
             "difficulty": 2
         },
         {
@@ -153,6 +161,7 @@
             "answer": [
                 1
             ],
+            "type": "MCQ",
             "difficulty": 2
         },
         {
@@ -170,6 +179,7 @@
             "answer": [
                 1
             ],
+            "type": "MCQ",
             "difficulty": 3
         },
         {
@@ -187,6 +197,7 @@
             "answer": [
                 1
             ],
+            "type": "MCQ",
             "difficulty": 3
         },
         {
@@ -204,6 +215,7 @@
             "answer": [
                 2
             ],
+            "type": "MCQ",
             "difficulty": 2
         },
         {
@@ -221,6 +233,7 @@
             "answer": [
                 2
             ],
+            "type": "MCQ",
             "difficulty": 2
         },
         {
@@ -238,6 +251,7 @@
             "answer": [
                 1
             ],
+            "type": "MCQ",
             "difficulty": 2
         },
         {
@@ -255,6 +269,7 @@
             "answer": [
                 1
             ],
+            "type": "MCQ",
             "difficulty": 2
         }
     ]
