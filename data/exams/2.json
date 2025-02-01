@@ -1,6 +1,7 @@
 {
     "title": "Java and Spring Fundamentals Exam 1",
     "description": "This exam tests some intermediate concepts in Java and Spring.",
+    "type": "MCQ",
     "problems": [
         {
             "topics": [

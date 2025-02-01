@@ -1,6 +1,7 @@
 {
     "title": "Core Java Programming - Beginner",
     "description": "This exam covers the fundamentals of Java programming for beginners.",
+    "type": "ESSAY",
     "problems": [
         {
             "topics": [
