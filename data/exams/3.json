@@ -1,0 +1,35 @@
+{
+    "title": "Java and Spring Fundamentals Exam 1",
+    "description": "This exam tests some intermediate concepts in Java and Spring.",
+    "type": "CODING_PROBLEM",
+    "problems": [
+        {
+            "topics": [
+                "Addition"
+            ],
+            "testCaseMatchType": "EXACT_STRING_MATCH",
+            "title": "Sum of two numbers",
+            "statement": "Given 2 numbers, complete the function to return their output",
+            "testCases": [
+                {
+                    "input": "1\n2",
+                    "expected": "3"
+                }
+            ],
+            "boilerplate": [
+                {
+                    "language": "python3",
+                    "code": "def addTwoNumbers(a, b):\n\t# write your code here",
+                    "hidden_code": ""
+                }
+            ],
+            "solutions": {
+                "python3": {
+                    "code": "def addTwoNumbers(a, b):\n\treturn a + b"
+                }
+            },
+            "difficulty": 0,
+            "runtimeLimitMS": 10000
+        }
+    ]
+}
