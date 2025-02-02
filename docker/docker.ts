@@ -17,7 +17,7 @@ async function runCodeInDocker(code, language, testCases) {
     const runCommand = getRunCommand(language);
 
     const container = await docker.createContainer({
-        Image: 'studyaid/multilang-executor',
+        Image: 'sweet/multilang-executor',
         Cmd: ['/bin/sh', '-c', runCommand],
         AttachStdout: true,
         AttachStderr: true,
