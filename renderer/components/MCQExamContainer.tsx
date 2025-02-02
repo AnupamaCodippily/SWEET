@@ -88,7 +88,6 @@ const MCQExamContainer: React.FC<MCQExamContainerProps> = ({ exam: { problems, t
     return (
         <div>
             <h2 style={{ textAlign: 'center', position: 'absolute', top: 10 }}>Exam: {title}</h2>
-            <button className='close-exam-button' style={{ position: 'fixed', top: 20, right: 24 }} onClick={_ => closeExam()}> Close Exam </button>
 
             <MCQProblemForm mcq={questions[questionIdx]} next={nextQuestion} />
 

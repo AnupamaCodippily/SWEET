@@ -1,6 +1,6 @@
-import { IProblem } from "./Problem";
+import { IProblem, ProblemType } from "./Problem";
 
-export type ExamType = 'MCQ' | 'ESSAY' | 'CODING' | 'MIXED';
+export type ExamType = ProblemType | 'MIXED';
 
 export interface Exam {
     title: string

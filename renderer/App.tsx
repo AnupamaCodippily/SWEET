@@ -4,7 +4,7 @@ import { useIpcRenderer } from './hooks/useIpcRenderer'
 import IPCChannel from './types/IPCChannel'
 import { loadExamFromJsonString } from './utils/load-exam'
 import { Exam, ExamType } from './models/Exam'
-import MCQExamContainer from './components/MCQExamContainer'
+import ExamContainer from './components/ExamContainer'
 
 function App() {
 
@@ -26,9 +26,7 @@ function App() {
 
   return (
     <main>
-      {
-        (exam?.type === 'MCQ' ) && <MCQExamContainer exam={exam} closeExam={() => setExam(_ => null)} />
-      }
+      <ExamContainer  exam={exam} closeExam={() => setExam(_ => null)}/>
     </main>
   )
 }
