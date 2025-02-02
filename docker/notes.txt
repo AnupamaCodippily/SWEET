@@ -1,0 +1,4 @@
+docker build -t sweet/multilang-executor .
+
+docker run -it --rm sweet/multilang-executor
+
